@@ -7,8 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Urin",
-  tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  tagline: "Develop about Embedded C and IoT",
+  favicon: "img/urin.png",
 
   // Set the production url of your site here
   url: "https://your-docusaurus-test-site.com",
@@ -31,6 +31,8 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  themes: [require.resolve("@easyops-cn/docusaurus-search-local")],
 
   presets: [
     [
@@ -67,7 +69,7 @@ const config = {
         title: "Urin",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/urin.png",
         },
         items: [
           {
@@ -77,6 +79,7 @@ const config = {
             label: "Tutorial",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/projects", label: "Projects", position: "left" },
           {
             href: "https://github.com/doankhietthanh/blog-embedded",
             label: "GitHub",
@@ -93,6 +96,10 @@ const config = {
               {
                 label: "Tutorial",
                 to: "/docs/intro",
+              },
+              {
+                label: "Projects",
+                to: "/projects",
               },
             ],
           },
